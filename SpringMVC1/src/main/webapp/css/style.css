@@ -1,0 +1,75 @@
+
+ :root {
+            --header-height: 3.5rem;
+
+        
+            --black-color: hsl(220, 24%, 12%);
+            --black-color-light: hsl(220, 24%, 15%);
+            --black-color-lighten: hsl(220, 20%, 18%);
+            --white-color: #fff;
+            --body-color: hsl(220, 100%, 97%);
+
+            --body-font: "Montserrat", sans-serif;
+            --normal-font-size: .938rem;
+
+       
+            --font-regular: 400;
+            --font-semi-bold: 600;
+
+          
+            --z-tooltip: 10;
+            --z-fixed: 100;
+        }
+
+      
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            background-color: var(--black-color);
+            font-weight: var(--font-semi-bold);
+            padding: 1.25rem 1.5rem;
+            display: inline-block;
+            transition: background-color .3s;
+        }
+
+        a:hover {
+            background-color: var(--black-color-light);
+        }
+
+     
+        h2 {
+            font-weight: var(--font-semi-bold);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin-inline: auto;
+            margin-top: var(--header-height);
+        }
+
+        .nav__list {
+            display: flex;
+            justify-content: center;
+            column-gap: 1.5rem;
+            background-color: var(--black-color);
+            padding: 1rem 0;
+        }
+
+       
